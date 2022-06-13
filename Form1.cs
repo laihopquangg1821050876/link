@@ -313,7 +313,7 @@ namespace m.fb
                 Banbe(chrome, sobbtt, Dangbai, cmt, soluongcmt);
                 Ketban(chrome, Tukhoa, Soluong);
                 Status(chrome, tukhoabaiviet, Soluogbaiviet, Coment);
-                //Thamgianhom(chrome, Idnhom, tukhoanhom);
+                Thamgianhom(chrome, Idnhom, tukhoanhom, );
 
 
 
