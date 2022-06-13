@@ -386,24 +386,72 @@ namespace m.fb.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Idnhom {
+        public string txtTukhoanhom {
             get {
-                return ((int)(this["Idnhom"]));
+                return ((string)(this["txtTukhoanhom"]));
             }
             set {
-                this["Idnhom"] = value;
+                this["txtTukhoanhom"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int txtIdnhom {
+        public string tukhoanhom {
             get {
-                return ((int)(this["txtIdnhom"]));
+                return ((string)(this["tukhoanhom"]));
             }
             set {
-                this["txtIdnhom"] = value;
+                this["tukhoanhom"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int soluongnhom {
+            get {
+                return ((int)(this["soluongnhom"]));
+            }
+            set {
+                this["soluongnhom"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Slnhom {
+            get {
+                return ((int)(this["Slnhom"]));
+            }
+            set {
+                this["Slnhom"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string answer {
+            get {
+                return ((string)(this["answer"]));
+            }
+            set {
+                this["answer"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string txttraloi {
+            get {
+                return ((string)(this["txttraloi"]));
+            }
+            set {
+                this["txttraloi"] = value;
             }
         }
     }

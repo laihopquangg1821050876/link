@@ -26,7 +26,7 @@ namespace m.fb
         private void saves_Click(object sender, EventArgs e)
         {
             Settings.Default.txtIdbaiviet = Convert.ToInt32(txtIdbaiviet.Text);
-            Settings.Default.txtIdnhom = Convert.ToInt32(txtIdnhom.Text);
+            Settings.Default.tukhoanhom = Convert.ToInt32(txtIdnhom.Text);
 
             Settings.Default.Save();
             this.Close();
@@ -35,7 +35,7 @@ namespace m.fb
         private void checkidbaiviet_Load(object sender, EventArgs e)
         {
             txtIdbaiviet.Text = Settings.Default.txtIdbaiviet.ToString();
-            txtIdnhom.Text = Settings.Default.txtIdnhom.ToString();
+            txtIdnhom.Text = Settings.Default.tukhoanhom.ToString();
         }
     }
 }

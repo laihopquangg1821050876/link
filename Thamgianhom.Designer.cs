@@ -31,7 +31,7 @@
             this.tukhoanhom = new System.Windows.Forms.Label();
             this.txtTukhoanhom = new System.Windows.Forms.TextBox();
             this.soluongnhom = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Slnhom = new System.Windows.Forms.TextBox();
             this.answer = new System.Windows.Forms.Label();
             this.txttraloi = new System.Windows.Forms.TextBox();
             this.Saves = new System.Windows.Forms.Button();
@@ -65,12 +65,12 @@
             this.soluongnhom.TabIndex = 2;
             this.soluongnhom.Text = "Số lượng";
             // 
-            // textBox1
+            // Slnhom
             // 
-            this.textBox1.Location = new System.Drawing.Point(120, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(40, 20);
-            this.textBox1.TabIndex = 3;
+            this.Slnhom.Location = new System.Drawing.Point(120, 51);
+            this.Slnhom.Name = "Slnhom";
+            this.Slnhom.Size = new System.Drawing.Size(40, 20);
+            this.Slnhom.TabIndex = 3;
             // 
             // answer
             // 
@@ -123,12 +123,13 @@
             this.Controls.Add(this.Saves);
             this.Controls.Add(this.txttraloi);
             this.Controls.Add(this.answer);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Slnhom);
             this.Controls.Add(this.soluongnhom);
             this.Controls.Add(this.txtTukhoanhom);
             this.Controls.Add(this.tukhoanhom);
             this.Name = "Thamgianhom";
             this.Text = "Thamgianhom";
+            this.Load += new System.EventHandler(this.Thamgianhom_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,7 +140,7 @@
         private System.Windows.Forms.Label tukhoanhom;
         private System.Windows.Forms.TextBox txtTukhoanhom;
         private System.Windows.Forms.Label soluongnhom;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Slnhom;
         private System.Windows.Forms.Label answer;
         private System.Windows.Forms.TextBox txttraloi;
         private System.Windows.Forms.Button Saves;

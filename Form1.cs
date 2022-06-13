@@ -271,7 +271,7 @@ namespace m.fb
                 Point SizeChrome = GetSizeChrome(5, 2);
 
                 login.ForeColor = Color.Gold;
-                login.UseWaitCursor = true;
+                login.UseWaitCursor = true; 
                 login.Text = "logining...";
                 string app = "data:,";
                 Chrome chrome = null;
@@ -286,7 +286,7 @@ namespace m.fb
                     //Proxy = proxy,
                     //TypeProxy = typeProxy,
                     DisableSound = true,
-                    App = app,
+                    //App = app,
                 };
                 chrome.Open();
                 chrome.GotoURL("https://m.facebook.com/login/");
@@ -302,18 +302,20 @@ namespace m.fb
                 string Dangbai = Settings.Default.txtdangbaibanbe;
                 string cmt = Settings.Default.txtcmt;
                 int sobaicmt = Settings.Default.soluongcmt;
-                int Idbaiviet = Settings.Default.txtIdbaiviet;
-                int Idnhom = Settings.Default.txtIdnhom;
+                int Idbaiviet = Settings.Default.txtIdbaiviet;              
                 int sobaituongtacnewfeed = Settings.Default.txtsobaituongtacnewfeed;
                 string Commentnewfeed = Settings.Default.txtComment;
                 int soluongcmt = Settings.Default.soluongcmt;
+                int soluongnhom = Settings.Default.Slnhom;
+                string tukhoanhom = Settings.Default.txtTukhoanhom;
+                string answer = Settings.Default.txttraloi;
 
                 Loginn(chrome, row);
                 Newfeed(chrome, sobaituongtacnewfeed, Commentnewfeed);
                 Banbe(chrome, sobbtt, Dangbai, cmt, soluongcmt);
                 Ketban(chrome, Tukhoa, Soluong);
                 Status(chrome, tukhoabaiviet, Soluogbaiviet, Coment);
-                Thamgianhom(chrome, Idnhom, tukhoanhom, );
+                Thamgianhom(chrome, tukhoanhom, soluongnhom, answer );
 
 
 
@@ -323,6 +325,11 @@ namespace m.fb
 
             }
 
+        }
+
+        private void Thamgianhom(Chrome chrome, string tukhoanhom, int soluongnhom, string answer)
+        {
+            
         }
 
         public static Point GetSizeChrome(int column, int row)
