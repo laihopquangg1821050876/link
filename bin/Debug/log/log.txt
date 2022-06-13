@@ -1,0 +1,32 @@
+-----------------------------------------------------------------------------
+Date: 10/05/2022 10:29:56
+File: 10_5_2022_10_29_56_1814
+Error: chrome.Open()
+
+Type: System.InvalidOperationException
+Message: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=101.0.4951.54) (SessionNotCreated)
+StackTrace:    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options)
+   at MCommon.Chrome.Open() in C:\m. fb\m.fb\Chrome.cs:line 365
+-----------------------------------------------------------------------------
+Date: 30/05/2022 11:39:37
+File: 30_5_2022_11_39_37_8750
+Error: chrome.Open()
+
+Type: OpenQA.Selenium.WebDriverException
+Message: unknown error: Chrome failed to start: exited normally.
+  (chrome not reachable)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+StackTrace:    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options)
+   at MCommon.Chrome.Open() in C:\m. fb\m.fb\Chrome.cs:line 365
