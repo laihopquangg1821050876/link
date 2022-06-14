@@ -76,53 +76,6 @@ namespace m.fb
 
         }
 
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // tương tác id bạn bè
-        private void Banbe(Chrome chrome, string Idbanbe, int sobbtt, string dangbai, string cmt, int sobaicmt)
-        {
-            chrome.Click(4, "[data-store-id=\"39\"]");
-            chrome.DelayTime(2);
-
-        }
-
-
-
-
-
-
-
-        //kết bạn bằng từ khóa
-
-        private void Addfriend(Chrome chrome, string tukhoa, int soluong)
-        {
-            chrome.Click(4, "[data-sigil=\"icon\"]", 1);
-            chrome.DelayTime(2);
-            //chrome.SendKeys(1, "main-search-input", 1, txtTukhoa);
-
-        }
 
         string GetTotp(string input)
         {
@@ -138,10 +91,7 @@ namespace m.fb
             }
             return "";
         }
-        private void taikhoan_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void login_Click(object sender, EventArgs e)
         {
@@ -313,6 +263,7 @@ namespace m.fb
                 int Idnhom = Settings.Default.txtIdnhom;
                 
 
+
                 Loginn(chrome, row);
                 Newfeed(chrome, Sobaituongtacnewfeed, Commentnewfeed);
                 Banbe(chrome, sobbtt, Dangbai, cmt, soluongcmt);
@@ -346,6 +297,8 @@ namespace m.fb
 
             chrome.Click(4, "[class=\"touchable_io2_iop\"]");
             chrome.DelayTime(2);
+
+
 
 
         }
