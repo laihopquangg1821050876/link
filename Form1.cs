@@ -92,11 +92,11 @@ namespace m.fb
             return "";
         }
         
-
+        
         private void login_Click(object sender, EventArgs e)
         {
             //Th = new Thread(Result); Th.Start();
-            int maxThread = 10;
+            int maxThread = 15;
             List<int> lstPossition = new List<int>();
             for (int i = 0; i < maxThread; i++)
                 lstPossition.Add(0);
@@ -236,7 +236,7 @@ namespace m.fb
                     //Proxy = proxy,
                     //TypeProxy = typeProxy,
                     DisableSound = true,
-                    //App = app,
+                    App = app,
 
                 };
                 chrome.Open();
@@ -505,7 +505,7 @@ namespace m.fb
             int j;
             for (j = 1; j <= sobbtt; j++)
             {
-                chrome.GotoURL("https://m.facebook.com/100027956912889");
+                chrome.GotoURL("https://m.facebook.com/");
                 chrome.DelayTime(2);
 
                 chrome.Click(4, "[class=\"darkTouch\"]", j);

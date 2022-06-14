@@ -478,5 +478,29 @@ namespace m.fb.Properties {
                 this["txtIdnhom"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Soluog {
+            get {
+                return ((int)(this["Soluog"]));
+            }
+            set {
+                this["Soluog"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Soluongg {
+            get {
+                return ((int)(this["Soluongg"]));
+            }
+            set {
+                this["Soluongg"] = value;
+            }
+        }
     }
 }

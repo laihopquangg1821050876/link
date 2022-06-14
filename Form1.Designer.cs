@@ -51,6 +51,8 @@
             this.bỏChọnTấtẢToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteUidPass2FaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyUidPass2FaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Soluog = new System.Windows.Forms.Label();
+            this.Soluongg = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatalst)).BeginInit();
             this.ctms.SuspendLayout();
             this.SuspendLayout();
@@ -129,12 +131,12 @@
             this.ttnewfeed.UseVisualStyleBackColor = false;
             this.ttnewfeed.Click += new System.EventHandler(this.ttnewfeed_Click);
             // 
-            // checkid
+            // CheckId
             // 
             this.CheckId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.CheckId.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckId.Location = new System.Drawing.Point(188, 11);
-            this.CheckId.Name = "checkid";
+            this.CheckId.Name = "CheckId";
             this.CheckId.Size = new System.Drawing.Size(150, 34);
             this.CheckId.TabIndex = 8;
             this.CheckId.Text = "Check ID baiviet";
@@ -251,12 +253,31 @@
             this.copyUidPass2FaToolStripMenuItem.Text = "Copy Uid|Pass|2Fa";
             this.copyUidPass2FaToolStripMenuItem.Click += new System.EventHandler(this.copyUidPass2FaToolStripMenuItem_Click);
             // 
+            // Soluog
+            // 
+            this.Soluog.AutoSize = true;
+            this.Soluog.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Soluog.Location = new System.Drawing.Point(350, 316);
+            this.Soluog.Name = "Soluog";
+            this.Soluog.Size = new System.Drawing.Size(86, 22);
+            this.Soluog.TabIndex = 10;
+            this.Soluog.Text = "Số luồng ";
+            // 
+            // Soluongg
+            // 
+            this.Soluongg.Location = new System.Drawing.Point(442, 316);
+            this.Soluongg.Name = "Soluongg";
+            this.Soluongg.Size = new System.Drawing.Size(32, 20);
+            this.Soluongg.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(511, 368);
+            this.Controls.Add(this.Soluongg);
+            this.Controls.Add(this.Soluog);
             this.Controls.Add(this.dgvDatalst);
             this.Controls.Add(this.CheckId);
             this.Controls.Add(this.ttnewfeed);
@@ -272,6 +293,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatalst)).EndInit();
             this.ctms.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -294,6 +316,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cPass;
         private System.Windows.Forms.DataGridViewTextBoxColumn c2Fa;
         private System.Windows.Forms.DataGridViewTextBoxColumn cStatus;
+        private System.Windows.Forms.Label Soluog;
+        private System.Windows.Forms.TextBox Soluongg;
     }
 }
 
