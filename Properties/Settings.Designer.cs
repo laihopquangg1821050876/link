@@ -314,12 +314,12 @@ namespace m.fb.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int sobaituongtacnewfeed {
+        public int Sobaituongtacnewfeed {
             get {
-                return ((int)(this["sobaituongtacnewfeed"]));
+                return ((int)(this["Sobaituongtacnewfeed"]));
             }
             set {
-                this["sobaituongtacnewfeed"] = value;
+                this["Sobaituongtacnewfeed"] = value;
             }
         }
         
@@ -452,6 +452,30 @@ namespace m.fb.Properties {
             }
             set {
                 this["txttraloi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Idnhom {
+            get {
+                return ((int)(this["Idnhom"]));
+            }
+            set {
+                this["Idnhom"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int txtIdnhom {
+            get {
+                return ((int)(this["txtIdnhom"]));
+            }
+            set {
+                this["txtIdnhom"] = value;
             }
         }
     }

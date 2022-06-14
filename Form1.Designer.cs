@@ -39,7 +39,7 @@
             this.baiviet = new System.Windows.Forms.Button();
             this.ttbanbe = new System.Windows.Forms.Button();
             this.ttnewfeed = new System.Windows.Forms.Button();
-            this.checkid = new System.Windows.Forms.Button();
+            this.CheckId = new System.Windows.Forms.Button();
             this.dgvDatalst = new System.Windows.Forms.DataGridView();
             this.cChose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.cUid = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -131,15 +131,15 @@
             // 
             // checkid
             // 
-            this.checkid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.checkid.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkid.Location = new System.Drawing.Point(188, 11);
-            this.checkid.Name = "checkid";
-            this.checkid.Size = new System.Drawing.Size(150, 34);
-            this.checkid.TabIndex = 8;
-            this.checkid.Text = "Check ID baiviet";
-            this.checkid.UseVisualStyleBackColor = false;
-            this.checkid.Click += new System.EventHandler(this.thongbao_Click);
+            this.CheckId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.CheckId.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckId.Location = new System.Drawing.Point(188, 11);
+            this.CheckId.Name = "checkid";
+            this.CheckId.Size = new System.Drawing.Size(150, 34);
+            this.CheckId.TabIndex = 8;
+            this.CheckId.Text = "Check ID baiviet";
+            this.CheckId.UseVisualStyleBackColor = false;
+            this.CheckId.Click += new System.EventHandler(this.thongbao_Click);
             // 
             // dgvDatalst
             // 
@@ -258,7 +258,7 @@
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(511, 368);
             this.Controls.Add(this.dgvDatalst);
-            this.Controls.Add(this.checkid);
+            this.Controls.Add(this.CheckId);
             this.Controls.Add(this.ttnewfeed);
             this.Controls.Add(this.ttbanbe);
             this.Controls.Add(this.baiviet);
@@ -282,7 +282,7 @@
         private System.Windows.Forms.Button baiviet;
         private System.Windows.Forms.Button ttbanbe;
         private System.Windows.Forms.Button ttnewfeed;
-        private System.Windows.Forms.Button checkid;
+        private System.Windows.Forms.Button CheckId;
         private System.Windows.Forms.DataGridView dgvDatalst;
         private System.Windows.Forms.ContextMenuStrip ctms;
         private System.Windows.Forms.ToolStripMenuItem chọnTấtCảToolStripMenuItem;

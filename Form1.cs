@@ -287,6 +287,7 @@ namespace m.fb
                     //TypeProxy = typeProxy,
                     DisableSound = true,
                     //App = app,
+
                 };
                 chrome.Open();
                 chrome.GotoURL("https://m.facebook.com/login/");
@@ -303,19 +304,22 @@ namespace m.fb
                 string cmt = Settings.Default.txtcmt;
                 int sobaicmt = Settings.Default.soluongcmt;
                 int Idbaiviet = Settings.Default.txtIdbaiviet;              
-                int sobaituongtacnewfeed = Settings.Default.txtsobaituongtacnewfeed;
+                int Sobaituongtacnewfeed = Settings.Default.txtsobaituongtacnewfeed;
                 string Commentnewfeed = Settings.Default.txtComment;
                 int soluongcmt = Settings.Default.soluongcmt;
                 int soluongnhom = Settings.Default.Slnhom;
                 string tukhoanhom = Settings.Default.txtTukhoanhom;
                 string answer = Settings.Default.txttraloi;
+                int Idnhom = Settings.Default.txtIdnhom;
+                
 
                 Loginn(chrome, row);
-                Newfeed(chrome, sobaituongtacnewfeed, Commentnewfeed);
+                Newfeed(chrome, Sobaituongtacnewfeed, Commentnewfeed);
                 Banbe(chrome, sobbtt, Dangbai, cmt, soluongcmt);
                 Ketban(chrome, Tukhoa, Soluong);
                 Status(chrome, tukhoabaiviet, Soluogbaiviet, Coment);
                 Thamgianhom(chrome, tukhoanhom, soluongnhom, answer );
+                checkid(chrome, Idbaiviet, Idnhom);
 
 
 
@@ -327,9 +331,23 @@ namespace m.fb
 
         }
 
-        private void Thamgianhom(Chrome chrome, string tukhoanhom, int soluongnhom, string answer)
+        private void checkid(Chrome chrome, int idbaiviet, int idnhom)
         {
             
+        }
+
+        private void Thamgianhom(Chrome chrome, string tukhoanhom, int soluongnhom, string answer)
+        {
+            chrome.Click(4, "[data-sigil=\"nav - popover search search_jewel_container_sigil\"]");
+            chrome.DelayTime(2);
+
+            chrome.SendKeys(4, "[data-sigil=\"search - small - box\"]", tukhoanhom);
+            chrome.DelayTime(3);
+
+            chrome.Click(4, "[class=\"touchable_io2_iop\"]");
+            chrome.DelayTime(2);
+
+
         }
 
         public static Point GetSizeChrome(int column, int row)
@@ -492,12 +510,12 @@ namespace m.fb
 
         // tương tác newfeed
 
-        private void Newfeed(Chrome chrome, int sobaituongtacnewfeed, string commentnewfeed)
+        private void Newfeed(Chrome chrome, int Sobaituongtacnewfeed, string commentnewfeed)
         {
 
 
             int i = 0;
-            for (i = 1; i <= sobaituongtacnewfeed; i++)
+            for (i = 1; i <= Sobaituongtacnewfeed; i++)
             {
 
 
