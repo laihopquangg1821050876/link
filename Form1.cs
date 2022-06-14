@@ -298,6 +298,12 @@ namespace m.fb
             chrome.Click(4, "[class=\"touchable_io2_iop\"]");
             chrome.DelayTime(2);
 
+            chrome.Click(4, "[href*=\"/search/groups\"]");
+            chrome.DelayTime(2);
+
+
+
+
 
 
 
