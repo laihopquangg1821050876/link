@@ -35,7 +35,7 @@ namespace m.fb
         private void Newfeed_Load(object sender, EventArgs e)
         {
             txtsobaituongtacnewfeed.Text = Settings.Default.txtsobaituongtacnewfeed.ToString();
-            Commentnewfeed.Text = Settings.Default.txtComment;
+            txtCommentnewfeed.Text = Settings.Default.txtComment;
 
 
         }
@@ -46,6 +46,11 @@ namespace m.fb
         }
 
         private void sobaituongtacnewfeed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Commentnewfeed_Click(object sender, EventArgs e)
         {
 
         }

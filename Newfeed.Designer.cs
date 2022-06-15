@@ -64,6 +64,7 @@
             this.Commentnewfeed.Size = new System.Drawing.Size(73, 19);
             this.Commentnewfeed.TabIndex = 2;
             this.Commentnewfeed.Text = "Comment";
+            this.Commentnewfeed.Click += new System.EventHandler(this.Commentnewfeed_Click);
             // 
             // txtCommentnewfeed
             // 

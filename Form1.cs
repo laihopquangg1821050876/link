@@ -242,12 +242,12 @@ namespace m.fb
 
 
                 Loginn(chrome, row);
-                Newfeed(chrome, Sobaituongtacnewfeed, Commentnewfeed);
-                Banbe(chrome, sobbtt, Dangbai, cmt, soluongcmt);
-                Ketban(chrome, Tukhoa, Soluong);
-                Status(chrome, tukhoabaiviet, Soluogbaiviet, Coment);
+                //Newfeed(chrome, Sobaituongtacnewfeed, Commentnewfeed);
+                //Banbe(chrome, sobbtt, Dangbai, cmt, soluongcmt);
+                //Ketban(chrome, Tukhoa, Soluong);
+                //Status(chrome, tukhoabaiviet, Soluogbaiviet, Coment);
                 Thamgianhom(chrome, tukhoanhom, soluongnhom, answer );
-                checkid(chrome, Idbaiviet, Idnhom);
+                //checkid(chrome, Idbaiviet, Idnhom);
 
 
 
@@ -307,10 +307,10 @@ namespace m.fb
 
         private void Thamgianhom(Chrome chrome, string tukhoanhom, int soluongnhom, string answer)
         {
-            chrome.Click(4, "[data-sigil=\"nav - popover search search_jewel_container_sigil\"]");
+            chrome.Click(2, "Tìm kiếm");
             chrome.DelayTime(2);
 
-            chrome.SendKeys(4, "[data-sigil=\"search - small - box\"]", tukhoanhom);
+            chrome.SendKeys(4, "[data-sigil=\"search-small-box\"]", tukhoanhom);
             chrome.DelayTime(3);
 
             chrome.Click(4, "[class=\"touchable_io2_iop\"]");
@@ -318,6 +318,8 @@ namespace m.fb
 
             chrome.Click(4, "[href*=\"/search/groups\"]");
             chrome.DelayTime(2);
+
+
 
 
 
