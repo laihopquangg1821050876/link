@@ -25,8 +25,8 @@ namespace m.fb
 
         private void saves_Click(object sender, EventArgs e)
         {
-            Settings.Default.Idbaiviet = Convert.ToInt32(txtIdbaiviet.Text);
-            Settings.Default.Idnhom = Convert.ToInt32(txtIdnhom.Text);
+            Settings.Default.Idbaiviet = txtIdbaiviet.Text;
+            Settings.Default.Idnhom = txtIdnhom.Text;
 
             Settings.Default.Save();
             this.Close();

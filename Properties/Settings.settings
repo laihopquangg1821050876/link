@@ -86,10 +86,10 @@
     <Setting Name="txtCommentnewfeed" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="Idbaiviet" Type="System.Int32" Scope="User">
+    <Setting Name="Idbaiviet" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="txtIdbaiviet" Type="System.Int32" Scope="User">
+    <Setting Name="txtIdbaiviet" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="txtTukhoanhom" Type="System.String" Scope="User">
@@ -110,10 +110,10 @@
     <Setting Name="txttraloi" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="Idnhom" Type="System.Int32" Scope="User">
+    <Setting Name="Idnhom" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="txtIdnhom" Type="System.Int32" Scope="User">
+    <Setting Name="txtIdnhom" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Soluog" Type="System.Int32" Scope="User">

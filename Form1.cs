@@ -9,6 +9,12 @@ using System.Drawing;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows.Forms;
+using System.IO;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace m.fb
 {
@@ -45,36 +51,7 @@ namespace m.fb
         List<Thread> lstThread = null;
         private object dtgvAcc;
 
-        public void Result()
-        {
-            login.ForeColor = Color.Gold;
-            login.UseWaitCursor = true;
-            login.Text = "loging...";
-            //OpenSelenium();
-            string app = "data:,";
-            Chrome chrome = null;
-            chrome = new Chrome()
-            {
-                UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
-                //ProfilePath = @"C:\TestFb\TestFb\bin\Debug\profiles\100080077767502",
-                Size = new Point(100, 300),
-                Position = new Point(0, 0),
-                TimeWaitForSearchingElement = 3,
-                TimeWaitForLoadingPage = 120,
-                //Proxy = proxy,
-                //TypeProxy = typeProxy,
-                DisableSound = true,
-                //App = app,
-            };
-            chrome.Open();
-            chrome.GotoURL("https://m.facebook.com/login/");
-            chrome.DelayTime(1);
-            
-            login.ForeColor = Color.Linen;
-            login.UseWaitCursor = false;
-            login.Text = "Login";
-
-        }
+        
 
 
         string GetTotp(string input)
@@ -253,14 +230,14 @@ namespace m.fb
                 string Dangbai = Settings.Default.txtdangbaibanbe;
                 string cmt = Settings.Default.txtcmt;
                 int sobaicmt = Settings.Default.soluongcmt;
-                int Idbaiviet = Settings.Default.txtIdbaiviet;              
+                string Idbaiviet = Settings.Default.txtIdbaiviet;              
                 int Sobaituongtacnewfeed = Settings.Default.txtsobaituongtacnewfeed;
                 string Commentnewfeed = Settings.Default.txtComment;
                 int soluongcmt = Settings.Default.soluongcmt;
                 int soluongnhom = Settings.Default.Slnhom;
                 string tukhoanhom = Settings.Default.txtTukhoanhom;
                 string answer = Settings.Default.txttraloi;
-                int Idnhom = Settings.Default.txtIdnhom;
+                string Idnhom = Settings.Default.txtIdnhom;
                 
 
 
@@ -282,9 +259,50 @@ namespace m.fb
 
         }
 
-        private void checkid(Chrome chrome, int idbaiviet, int idnhom)
+        private void checkid(Chrome chrome, string Idbaiviet, string Idnhom)
         {
-            
+            try
+            {
+                string IDBaiVet;
+                List<string> lstIdBaiViet = Idbaiviet.Lines.ToList();
+
+                for (int i = 0; i < lstIdBaiViet.Count; i++)
+                {
+                    chrome.GotoURL("https://m.facebook.com/" + lstIdBaiViet[i]);
+                    chrome.DelayTime(1);
+
+                    if (chrome.CheckExistElement("[data-sigil=\"ufi-inline-actions\"] a") == 1)
+                    {
+                        chrome.DelayTime(1);
+
+
+
+
+
+
+                        string link = chrome.ExecuteScript("return document.querySelector('[name =\"apple-itunes-app\"]').getAttribute('content')").ToString();
+                        string id = Regex.Match(link, @"\?id=([0-9]{1,})").Groups[1].Value;
+
+
+                        File.AppendAllText(Text, lstIdBaiViet[i] + "|1|" + id + Environment.NewLine);
+                        Idnhom.Text += id + Environment.NewLine;
+                    }
+                    else
+                    {
+                        Idnhom.Text += (Text, lstIdBaiViet + "|0|" + Environment.NewLine);
+                        // textbox += hiển thị : nhập phần check vào form
+                    }
+
+                }
+                //string readText = File.ReadAllText("checkid.txt");
+                //Console.WriteLine(readText);
+
+            }
+            catch
+            {
+
+            }
+
         }
 
         private void Thamgianhom(Chrome chrome, string tukhoanhom, int soluongnhom, string answer)

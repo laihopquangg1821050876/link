@@ -362,9 +362,9 @@ namespace m.fb.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Idbaiviet {
+        public string Idbaiviet {
             get {
-                return ((int)(this["Idbaiviet"]));
+                return ((string)(this["Idbaiviet"]));
             }
             set {
                 this["Idbaiviet"] = value;
@@ -374,9 +374,9 @@ namespace m.fb.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int txtIdbaiviet {
+        public string txtIdbaiviet {
             get {
-                return ((int)(this["txtIdbaiviet"]));
+                return ((string)(this["txtIdbaiviet"]));
             }
             set {
                 this["txtIdbaiviet"] = value;
@@ -458,9 +458,9 @@ namespace m.fb.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Idnhom {
+        public string Idnhom {
             get {
-                return ((int)(this["Idnhom"]));
+                return ((string)(this["Idnhom"]));
             }
             set {
                 this["Idnhom"] = value;
@@ -470,9 +470,9 @@ namespace m.fb.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int txtIdnhom {
+        public string txtIdnhom {
             get {
-                return ((int)(this["txtIdnhom"]));
+                return ((string)(this["txtIdnhom"]));
             }
             set {
                 this["txtIdnhom"] = value;
