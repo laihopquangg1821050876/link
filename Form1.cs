@@ -261,47 +261,47 @@ namespace m.fb
 
         private void checkid(Chrome chrome, string Idbaiviet, string Idnhom)
         {
-            try
-            {
-                string IDBaiVet;
-                List<string> lstIdBaiViet = Idbaiviet.Lines.ToList();
+            //try
+            //{
+            //    string IDBaiVet;
+            //    List<string> lstIdBaiViet = Idbaiviet.Lines.ToList();
 
-                for (int i = 0; i < lstIdBaiViet.Count; i++)
-                {
-                    chrome.GotoURL("https://m.facebook.com/" + lstIdBaiViet[i]);
-                    chrome.DelayTime(1);
+            //    for (int i = 0; i < lstIdBaiViet.Count; i++)
+            //    {
+            //        chrome.GotoURL("https://m.facebook.com/" + lstIdBaiViet[i]);
+            //        chrome.DelayTime(1);
 
-                    if (chrome.CheckExistElement("[data-sigil=\"ufi-inline-actions\"] a") == 1)
-                    {
-                        chrome.DelayTime(1);
-
-
+            //        if (chrome.CheckExistElement("[data-sigil=\"ufi-inline-actions\"] a") == 1)
+            //        {
+            //            chrome.DelayTime(1);
 
 
 
 
-                        string link = chrome.ExecuteScript("return document.querySelector('[name =\"apple-itunes-app\"]').getAttribute('content')").ToString();
-                        string id = Regex.Match(link, @"\?id=([0-9]{1,})").Groups[1].Value;
 
 
-                        File.AppendAllText(Text, lstIdBaiViet[i] + "|1|" + id + Environment.NewLine);
-                        Idnhom.Text += id + Environment.NewLine;
-                    }
-                    else
-                    {
-                        Idnhom.Text += (Text, lstIdBaiViet + "|0|" + Environment.NewLine);
-                        // textbox += hiển thị : nhập phần check vào form
-                    }
+            //            string link = chrome.ExecuteScript("return document.querySelector('[name =\"apple-itunes-app\"]').getAttribute('content')").ToString();
+            //            string id = Regex.Match(link, @"\?id=([0-9]{1,})").Groups[1].Value;
 
-                }
-                //string readText = File.ReadAllText("checkid.txt");
-                //Console.WriteLine(readText);
 
-            }
-            catch
-            {
+            //            File.AppendAllText(Text, lstIdBaiViet[i] + "|1|" + id + Environment.NewLine);
+            //            Idnhom.Text += id + Environment.NewLine;
+            //        }
+            //        else
+            //        {
+            //            Idnhom.Text += (Text, lstIdBaiViet + "|0|" + Environment.NewLine);
+            //            // textbox += hiển thị : nhập phần check vào form
+            //        }
 
-            }
+            //    }
+            //    //string readText = File.ReadAllText("checkid.txt");
+            //    //Console.WriteLine(readText);
+
+            //}
+            //catch
+            //{
+
+            //}
 
         }
 
