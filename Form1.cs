@@ -213,7 +213,7 @@ namespace m.fb
                     //Proxy = proxy,
                     //TypeProxy = typeProxy,
                     DisableSound = true,
-                    App = app,
+                    //App = app,
 
                 };
                 chrome.Open();
@@ -242,12 +242,12 @@ namespace m.fb
 
 
                 Loginn(chrome, row);
-                //Newfeed(chrome, Sobaituongtacnewfeed, Commentnewfeed);
-                //Banbe(chrome, sobbtt, Dangbai, cmt, soluongcmt);
-                //Ketban(chrome, Tukhoa, Soluong);
-                //Status(chrome, tukhoabaiviet, Soluogbaiviet, Coment);
+                Newfeed(chrome, Sobaituongtacnewfeed, Commentnewfeed);
+                Banbe(chrome, sobbtt, Dangbai, cmt, soluongcmt);
+                Ketban(chrome, Tukhoa, Soluong);
+                Status(chrome, tukhoabaiviet, Soluogbaiviet, Coment);
                 Thamgianhom(chrome, tukhoanhom, soluongnhom, answer );
-                //checkid(chrome, Idbaiviet, Idnhom);
+                checkid(chrome, Idbaiviet, Idnhom);
 
 
 
