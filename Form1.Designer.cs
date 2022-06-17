@@ -1,6 +1,6 @@
 ﻿namespace m.fb
 {
-    partial class Form1
+    partial class Dangbai
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dangbai));
             this.login = new System.Windows.Forms.Button();
             this.ketban = new System.Windows.Forms.Button();
             this.Joingroup = new System.Windows.Forms.Button();
@@ -51,6 +51,7 @@
             this.bỏChọnTấtẢToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteUidPass2FaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyUidPass2FaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dangbaiNf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatalst)).BeginInit();
             this.ctms.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +60,7 @@
             // 
             this.login.BackColor = System.Drawing.SystemColors.Highlight;
             this.login.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login.Location = new System.Drawing.Point(12, 309);
+            this.login.Location = new System.Drawing.Point(12, 346);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(114, 36);
             this.login.TabIndex = 2;
@@ -71,9 +72,9 @@
             // 
             this.ketban.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ketban.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ketban.Location = new System.Drawing.Point(12, 11);
+            this.ketban.Location = new System.Drawing.Point(292, 62);
             this.ketban.Name = "ketban";
-            this.ketban.Size = new System.Drawing.Size(150, 34);
+            this.ketban.Size = new System.Drawing.Size(91, 34);
             this.ketban.TabIndex = 3;
             this.ketban.Text = "Kết bạn ";
             this.ketban.UseVisualStyleBackColor = false;
@@ -83,7 +84,7 @@
             // 
             this.Joingroup.BackColor = System.Drawing.Color.Fuchsia;
             this.Joingroup.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Joingroup.Location = new System.Drawing.Point(356, 51);
+            this.Joingroup.Location = new System.Drawing.Point(12, 12);
             this.Joingroup.Name = "Joingroup";
             this.Joingroup.Size = new System.Drawing.Size(150, 33);
             this.Joingroup.TabIndex = 4;
@@ -95,7 +96,7 @@
             // 
             this.baiviet.BackColor = System.Drawing.Color.Aqua;
             this.baiviet.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.baiviet.Location = new System.Drawing.Point(12, 51);
+            this.baiviet.Location = new System.Drawing.Point(12, 61);
             this.baiviet.Name = "baiviet";
             this.baiviet.Size = new System.Drawing.Size(150, 33);
             this.baiviet.TabIndex = 5;
@@ -107,7 +108,7 @@
             // 
             this.ttbanbe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ttbanbe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ttbanbe.Location = new System.Drawing.Point(188, 51);
+            this.ttbanbe.Location = new System.Drawing.Point(178, 12);
             this.ttbanbe.Name = "ttbanbe";
             this.ttbanbe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ttbanbe.Size = new System.Drawing.Size(150, 33);
@@ -120,7 +121,7 @@
             // 
             this.ttnewfeed.BackColor = System.Drawing.Color.Lime;
             this.ttnewfeed.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ttnewfeed.Location = new System.Drawing.Point(356, 12);
+            this.ttnewfeed.Location = new System.Drawing.Point(349, 12);
             this.ttnewfeed.Name = "ttnewfeed";
             this.ttnewfeed.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ttnewfeed.Size = new System.Drawing.Size(150, 33);
@@ -133,9 +134,9 @@
             // 
             this.CheckId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.CheckId.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckId.Location = new System.Drawing.Point(188, 11);
+            this.CheckId.Location = new System.Drawing.Point(178, 62);
             this.CheckId.Name = "CheckId";
-            this.CheckId.Size = new System.Drawing.Size(150, 34);
+            this.CheckId.Size = new System.Drawing.Size(99, 32);
             this.CheckId.TabIndex = 8;
             this.CheckId.Text = "Check ID baiviet";
             this.CheckId.UseVisualStyleBackColor = false;
@@ -146,7 +147,7 @@
             this.dgvDatalst.AllowUserToAddRows = false;
             this.dgvDatalst.AllowUserToDeleteRows = false;
             this.dgvDatalst.AllowUserToResizeColumns = false;
-            this.dgvDatalst.BackgroundColor = System.Drawing.Color.White;
+            this.dgvDatalst.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,7 +172,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvDatalst.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvDatalst.Location = new System.Drawing.Point(12, 90);
+            this.dgvDatalst.Location = new System.Drawing.Point(12, 119);
             this.dgvDatalst.Name = "dgvDatalst";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -182,7 +183,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvDatalst.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDatalst.RowHeadersVisible = false;
-            this.dgvDatalst.Size = new System.Drawing.Size(494, 204);
+            this.dgvDatalst.Size = new System.Drawing.Size(488, 204);
             this.dgvDatalst.TabIndex = 9;
             // 
             // cChose
@@ -251,12 +252,27 @@
             this.copyUidPass2FaToolStripMenuItem.Text = "Copy Uid|Pass|2Fa";
             this.copyUidPass2FaToolStripMenuItem.Click += new System.EventHandler(this.copyUidPass2FaToolStripMenuItem_Click);
             // 
-            // Form1
+            // dangbaiNf
+            // 
+            this.dangbaiNf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.dangbaiNf.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dangbaiNf.Location = new System.Drawing.Point(408, 62);
+            this.dangbaiNf.Name = "dangbaiNf";
+            this.dangbaiNf.Size = new System.Drawing.Size(91, 33);
+            this.dangbaiNf.TabIndex = 10;
+            this.dangbaiNf.Text = "Đăng bài ";
+            this.dangbaiNf.UseVisualStyleBackColor = false;
+            this.dangbaiNf.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // Dangbai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(511, 368);
+            this.BackgroundImage = global::m.fb.Properties.Resources.BGR;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(512, 407);
+            this.Controls.Add(this.dangbaiNf);
             this.Controls.Add(this.dgvDatalst);
             this.Controls.Add(this.CheckId);
             this.Controls.Add(this.ttnewfeed);
@@ -265,8 +281,9 @@
             this.Controls.Add(this.Joingroup);
             this.Controls.Add(this.ketban);
             this.Controls.Add(this.login);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Dangbai";
             this.Text = "Fb_Interactive";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatalst)).EndInit();
@@ -294,6 +311,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cPass;
         private System.Windows.Forms.DataGridViewTextBoxColumn c2Fa;
         private System.Windows.Forms.DataGridViewTextBoxColumn cStatus;
+        private System.Windows.Forms.Button dangbaiNf;
     }
 }
 

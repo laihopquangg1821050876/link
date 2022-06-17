@@ -79,6 +79,12 @@
       <DependentUpon>checkidbaiviet.cs</DependentUpon>
     </Compile>
     <Compile Include="Chrome.cs" />
+    <Compile Include="DangbaiNF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangbaiNF.Designer.cs">
+      <DependentUpon>DangbaiNF.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dim.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -118,6 +124,9 @@
     <EmbeddedResource Include="checkidbaiviet.resx">
       <DependentUpon>checkidbaiviet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DangbaiNF.resx">
+      <DependentUpon>DangbaiNF.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +144,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Thamgianhom.resx">
       <DependentUpon>Thamgianhom.cs</DependentUpon>
@@ -158,6 +168,15 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ẢNH NỀN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BGR.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Selenium.WebDriver.ChromeDriver.101.0.4951.4100\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('packages\Selenium.WebDriver.ChromeDriver.101.0.4951.4100\build\Selenium.WebDriver.ChromeDriver.targets')" />

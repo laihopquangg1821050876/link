@@ -18,13 +18,13 @@ using System.Threading.Tasks;
 
 namespace m.fb
 {
-    public partial class Form1 : Form
+    public partial class Dangbai : Form
     {
 
 
 
 
-        public Form1()
+        public Dangbai()
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
@@ -822,6 +822,16 @@ namespace m.fb
         }
 
         private void ctms_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ShowForm(new DangbaiNF());
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }

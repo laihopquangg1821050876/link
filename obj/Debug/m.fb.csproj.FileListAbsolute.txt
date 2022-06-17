@@ -13,7 +13,6 @@ C:\m. fb\m.fb\obj\Debug\m.fb.csproj.AssemblyReference.cache
 C:\m. fb\m.fb\obj\Debug\m.fb.csproj.SuggestedBindingRedirects.cache
 C:\m. fb\m.fb\obj\Debug\m.fb.bàiviet.resources
 C:\m. fb\m.fb\obj\Debug\m.fb.checkidbaiviet.resources
-C:\m. fb\m.fb\obj\Debug\m.fb.Form1.resources
 C:\m. fb\m.fb\obj\Debug\m.fb.Ketban.resources
 C:\m. fb\m.fb\obj\Debug\m.fb.mNewfeed.resources
 C:\m. fb\m.fb\obj\Debug\m.fb.Properties.Resources.resources
@@ -24,3 +23,5 @@ C:\m. fb\m.fb\obj\Debug\m.fb.csproj.CoreCompileInputs.cache
 C:\m. fb\m.fb\obj\Debug\m.fb.csproj.CopyComplete
 C:\m. fb\m.fb\obj\Debug\m.fb.exe
 C:\m. fb\m.fb\obj\Debug\m.fb.pdb
+C:\m. fb\m.fb\obj\Debug\m.fb.DangbaiNF.resources
+C:\m. fb\m.fb\obj\Debug\m.fb.Dangbai.resources
