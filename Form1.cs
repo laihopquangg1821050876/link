@@ -213,7 +213,7 @@ namespace m.fb
                     //Proxy = proxy,
                     //TypeProxy = typeProxy,
                     DisableSound = true,
-                    //App = app,
+                    App = app,
 
                 };
                 chrome.Open();
@@ -259,75 +259,7 @@ namespace m.fb
 
         }
 
-        private void checkid(Chrome chrome, string Idbaiviet, string Idnhom)
-        {
-            //try
-            //{
-            //    string IDBaiVet;
-            //    List<string> lstIdBaiViet = Idbaiviet.Lines.ToList();
-
-            //    for (int i = 0; i < lstIdBaiViet.Count; i++)
-            //    {
-            //        chrome.GotoURL("https://m.facebook.com/" + lstIdBaiViet[i]);
-            //        chrome.DelayTime(1);
-
-            //        if (chrome.CheckExistElement("[data-sigil=\"ufi-inline-actions\"] a") == 1)
-            //        {
-            //            chrome.DelayTime(1);
-
-
-
-
-
-
-            //            string link = chrome.ExecuteScript("return document.querySelector('[name =\"apple-itunes-app\"]').getAttribute('content')").ToString();
-            //            string id = Regex.Match(link, @"\?id=([0-9]{1,})").Groups[1].Value;
-
-
-            //            File.AppendAllText(Text, lstIdBaiViet[i] + "|1|" + id + Environment.NewLine);
-            //            Idnhom.Text += id + Environment.NewLine;
-            //        }
-            //        else
-            //        {
-            //            Idnhom.Text += (Text, lstIdBaiViet + "|0|" + Environment.NewLine);
-            //            // textbox += hiển thị : nhập phần check vào form
-            //        }
-
-            //    }
-            //    //string readText = File.ReadAllText("checkid.txt");
-            //    //Console.WriteLine(readText);
-
-            //}
-            //catch
-            //{
-
-            //}
-
-        }
-
-        private void Thamgianhom(Chrome chrome, string tukhoanhom, int soluongnhom, string answer)
-        {
-            chrome.Click(2, "Tìm kiếm");
-            chrome.DelayTime(2);
-
-            chrome.SendKeys(4, "[data-sigil=\"search-small-box\"]", tukhoanhom);
-            chrome.DelayTime(3);
-
-            chrome.Click(4, "[class=\"touchable_io2_iop\"]");
-            chrome.DelayTime(2);
-
-            chrome.Click(4, "[href*=\"/search/groups\"]");
-            chrome.DelayTime(2);
-
-
-
-
-
-
-
-
-
-        }
+        
 
         public static Point GetSizeChrome(int column, int row)
         {
@@ -657,6 +589,76 @@ namespace m.fb
                 chrome.GotoBackPage();
 
             }
+
+        }
+
+        private void checkid(Chrome chrome, string Idbaiviet, string Idnhom)
+        {
+            //try
+            //{
+            //    string IDBaiVet;
+            //    List<string> lstIdBaiViet = Idbaiviet.Lines.ToList();
+
+            //    for (int i = 0; i < lstIdBaiViet.Count; i++)
+            //    {
+            //        chrome.GotoURL("https://m.facebook.com/" + lstIdBaiViet[i]);
+            //        chrome.DelayTime(1);
+
+            //        if (chrome.CheckExistElement("[data-sigil=\"ufi-inline-actions\"] a") == 1)
+            //        {
+            //            chrome.DelayTime(1);
+
+
+
+
+
+
+            //            string link = chrome.ExecuteScript("return document.querySelector('[name =\"apple-itunes-app\"]').getAttribute('content')").ToString();
+            //            string id = Regex.Match(link, @"\?id=([0-9]{1,})").Groups[1].Value;
+
+
+            //            File.AppendAllText(Text, lstIdBaiViet[i] + "|1|" + id + Environment.NewLine);
+            //            Idnhom.Text += id + Environment.NewLine;
+            //        }
+            //        else
+            //        {
+            //            Idnhom.Text += (Text, lstIdBaiViet + "|0|" + Environment.NewLine);
+            //            // textbox += hiển thị : nhập phần check vào form
+            //        }
+
+            //    }
+            //    //string readText = File.ReadAllText("checkid.txt");
+            //    //Console.WriteLine(readText);
+
+            //}
+            //catch
+            //{
+
+            //}
+
+        }
+
+        private void Thamgianhom(Chrome chrome, string tukhoanhom, int soluongnhom, string answer)
+        {
+            chrome.Click(2, "Tìm kiếm");
+            chrome.DelayTime(2);
+
+            chrome.SendKeys(4, "[data-sigil=\"search-small-box\"]", tukhoanhom);
+            chrome.DelayTime(3);
+
+            chrome.Click(4, "[class=\"touchable_io2_iop\"]");
+            chrome.DelayTime(2);
+
+            chrome.Click(4, "[href*=\"/search/groups\"]");
+            chrome.DelayTime(2);
+
+
+
+
+
+
+
+
 
         }
 
