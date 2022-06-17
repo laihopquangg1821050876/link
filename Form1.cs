@@ -422,6 +422,7 @@ namespace m.fb
         // tương tác newfeed
 
         private void Newfeed(Chrome chrome, int Sobaituongtacnewfeed, string commentnewfeed)
+         
         {
 
 
@@ -457,7 +458,7 @@ namespace m.fb
             int j;
             for (j = 1; j <= sobbtt; j++)
             {
-                chrome.GotoURL("https://m.facebook.com/");
+                chrome.GotoURL("https://m.facebook.com/friends/center/friends/?fb_ref=fbm");
                 chrome.DelayTime(2);
 
                 chrome.Click(4, "[class=\"darkTouch\"]", j);
